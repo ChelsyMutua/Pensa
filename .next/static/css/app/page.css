@@ -1,0 +1,147 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/buttons/Buttons.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.Buttons_container__H1Bkd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.Buttons_title__1E_xt {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Buttons_buttons___nwRu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Buttons_button__qRn2B {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 50px;
+     font-weight: bold;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Buttons_button__qRn2B.Buttons_selected1__dVm5R {
+    background-color: #FFDE83;
+    color: black;
+    border-color: #FFDE83;
+}
+
+.Buttons_button__qRn2B.Buttons_selected2__kaEUd {
+    background-color: #87CFFA;
+    color: black;
+    border-color: #87CFFA;
+}
+
+.Buttons_button__qRn2B.Buttons_selected3__5awWB {
+    background-color: #FFC5B3;
+    color: black;
+    border-color: #FFC5B3;
+}
+
+.Buttons_button__qRn2B.Buttons_selected4__sGBRs {
+    background-color: #FFC783;
+    color: black;
+    border-color: #FFC783;
+}
+
+.Buttons_continueButton__K7T7T {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Buttons_continueButton__K7T7T:hover {
+    background-color: #555;
+}
+
+.Buttons_diaryButton__ZIORV {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Buttons_diaryButton__ZIORV:hover {
+    background-color: #555;
+}
+.Buttons_continueButton__K7T7T {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  .Buttons_mainText__AZamZ {
+    font-size: 18px;
+   
+  }
+  
+  .Buttons_subText__j9uUx {
+    font-size: 10px;
+    display: flex;
+    align-items: start;
+  }
+  
+  .Buttons_iconClock__R0J1_ {
+    margin-right: 5px;
+  }
+  
+  .Buttons_iconArrow__RCvvt {
+    margin-left: 5px;
+  }
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/* pages/page.module.css */
+
+.page_pageContainer___Ajkl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ebe2e2;
+  padding: 20px;
+}
+
+.page_mainContent__51TpB {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('/feeling.png') no-repeat center center;
+  background-size: contain; /* Ensures the image scales correctly */
+}
+
