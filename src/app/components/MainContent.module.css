@@ -10,9 +10,18 @@
   align-items: center;
 }
 
+.promptContainer {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .textArea {
-  width: 80%;
-  height: 80vh;
+  width: 90%;
+  height: 600px;
   padding: 20px;
   border: none;
   border-radius: 8px;
@@ -20,4 +29,26 @@
   font-size: 16px;
   resize: none;
   outline: none;
+  margin-top: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prevButton, .nextButton, .saveButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #87CFFA;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.prevButton:hover, .nextButton:hover, .saveButton:hover {
+  background-color: #001529;
+  color:white;
 }

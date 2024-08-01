@@ -1,6 +1,7 @@
 // src/app/components/buttons/ButtonsWithBackground.js
 "use client";
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './ButtonsWithBackground.module.css';
 
 const feelings = ["Angry", "Sad", "Tired", "Neutral", "Funny", "Inspired", "Happy"];
@@ -15,6 +16,7 @@ export default function ButtonsWithBackground({ onDiaryClick }) {
   const [selectedClass, setSelectedClass] = useState(null);
   const [prompts, setPrompts] = useState([]);
   const [showPrompts, setShowPrompts] = useState(false);
+  const router = useRouter();
 
   const toggleButton = (feeling) => {
     if (selected === feeling) {
@@ -34,6 +36,9 @@ export default function ButtonsWithBackground({ onDiaryClick }) {
       const data = await response.json();
       setPrompts(data[selected]);
       setShowPrompts(true);
+
+      // Navigate to the MainContent page with the selected feeling and prompts
+      router.push(`/?emotion=${selected}`);
     }
   };
 
@@ -60,7 +65,7 @@ export default function ButtonsWithBackground({ onDiaryClick }) {
           </span>
         </button>
       )}
-      {showPrompts && (
+      {/* {showPrompts && (
         <div className={styles.prompts}>
           <h2>Journal Prompts for {selected}</h2>
           <ul>
@@ -69,7 +74,7 @@ export default function ButtonsWithBackground({ onDiaryClick }) {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
       <button className={styles.diaryButton} onClick={onDiaryClick}>
         <span className={styles.mainText}>My Diary</span>
         <span className={styles.subText}>

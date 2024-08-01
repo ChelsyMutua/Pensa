@@ -166,9 +166,18 @@
   align-items: center;
 }
 
+.MainContent_promptContainer__cequ4 {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .MainContent_textArea___mR_6 {
-  width: 80%;
-  height: 80vh;
+  width: 90%;
+  height: 600px;
   padding: 20px;
   border: none;
   border-radius: 8px;
@@ -176,6 +185,28 @@
   font-size: 16px;
   resize: none;
   outline: none;
+  margin-top: 10px;
+}
+
+.MainContent_buttonContainer__QBJWo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.MainContent_prevButton__Enc6k, .MainContent_nextButton__jwYow, .MainContent_saveButton__5bwo6 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #87CFFA;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.MainContent_prevButton__Enc6k:hover, .MainContent_nextButton__jwYow:hover, .MainContent_saveButton__5bwo6:hover {
+  background-color: #001529;
+  color:white;
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -306,7 +337,7 @@ html, body, #__next {
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/sidebar.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
-/* src/app/components/sidebar.module.css */
+/* src/app/components/Sidebar.module.css */
 .sidebar_sidebar__mZMbY {
   width: 250px;
   background-color: #333;
@@ -314,44 +345,58 @@ html, body, #__next {
   padding: 20px;
   height: 100vh;
   overflow-y: auto;
+  position: relative;
+}
+
+.sidebar_addButton__ezTF8 {
+  background-color: #FFDE83;
+  color: #333;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar_sidebar__mZMbY h2 {
-  margin-top: 0;
+  margin-top: 50px; /* Adjust based on button size */
   color: white;
+  text-align: center;
 }
 
-/* Ensure the Menu is styled correctly */
-.sidebar_ant-menu__uhaYe {
+.sidebar_menu__bGpm4 {
+  margin-top: 20px;
+}
+
+.sidebar_menuItem__ISo6_ {
+  margin: 10px 0;
+  color: black !important;
+}
+
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item__4yD3q {
   background-color: #333 !important;
-  color: white !important;
-  border-right: none !important;
+  color: black !important;
 }
 
-.sidebar_ant-menu-item__4yD3q {
-  background-color: #333 !important;
-  color: white !important;
-  margin: 10px 0 !important;
-}
-
-.sidebar_ant-menu-item__4yD3q:hover {
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item__4yD3q:hover {
   background-color: #444 !important;
 }
 
-.sidebar_ant-menu-item-selected__SVvTF {
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item-selected__SVvTF {
   background-color: #555 !important;
 }
 
-.sidebar_ant-menu-item__4yD3q a {
-  color: white !important;
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item__4yD3q a {
+  color: black !important;
 }
 
-.sidebar_ant-menu-item__4yD3q a:hover {
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item__4yD3q a:hover {
   color: #ddd !important;
 }
 
-.sidebar_ant-menu-item-icon__FsqTa {
-  color: white !important;
+.sidebar_menu__bGpm4 .sidebar_ant-menu-item-icon__FsqTa {
+  color: inherit !important;
 }
 
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
