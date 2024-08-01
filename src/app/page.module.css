@@ -1,24 +1,15 @@
-/* pages/page.module.css */
-
+/* page.module.css */
 .pageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #ebe2e2;
-  padding: 20px;
-}
-
-.mainContent {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: url('/feeling.png') no-repeat center center;
-  background-size: contain; /* Ensures the image scales correctly */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ebe2e2;
+    padding: 20px;
+  }
+  
+  .mainContent {
+    width: 100%;
+    height: 100%;
+  }

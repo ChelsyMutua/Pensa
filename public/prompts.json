@@ -1,0 +1,51 @@
+{
+    "Angry": [
+        "Describe a situation that made you angry today. What exactly triggered this emotion?",
+        "If your anger could speak, what would it say? Write a letter from your anger to yourself.",
+        "What's a constructive way you could channel your anger? Brainstorm 3 ideas.",
+        "Write about a person who often makes you angry. Why do you think they have this effect on you?",
+        "Describe your anger as if it were a color, shape, or weather phenomenon. Why did you choose this representation?"
+    ],
+    "Sad": [
+        "What's weighing on your heart today? Describe your sadness in detail.",
+        "Write a comforting letter to yourself from the perspective of a caring friend.",
+        "If your sadness had a message for you, what would it be trying to tell you?",
+        "What's one small step you could take today to nurture yourself in your sadness?",
+        "Imagine your sadness as a color or landscape. Describe it in vivid detail."
+    ],
+    "Tired": [
+        "Describe your tiredness. Is it physical, mental, emotional, or a combination?",
+        "What activities or responsibilities are draining your energy the most right now?",
+        "If you had an extra hour in your day for rest, how would you spend it?",
+        "List 5 small changes you could make to your daily routine to conserve energy.",
+        "How does being tired affect your thoughts, emotions, and behaviors?"
+    ],
+    "Neutral": [
+        "Describe your current neutral state. What does it feel like to be neither particularly positive nor negative?",
+        "Reflect on the events of your day so far. What stands out, even if it didn't elicit strong emotions?",
+        "Write about a decision you need to make. How does your neutral state affect your thought process?",
+        "What's one small thing you could do to shift your mood, if you wanted to?",
+        "How does your neutral state affect your interactions with others?"
+    ],
+    "Funny": [
+        "Describe the last thing that made you laugh out loud. What was so funny about it?",
+        "Write a humorous dialogue between two inanimate objects in your room.",
+        "If you could create a new comedy show, what would it be about?",
+        "Write a silly poem about your day so far.",
+        "Write a humorous advertisement for a mundane object in your home."
+    ],
+    "Inspired": [
+        "What has sparked your inspiration today? Describe it in detail.",
+        "List 5 ideas that have come from your current inspired state.",
+        "Write about someone who inspires you. What qualities do they possess?",
+        "If you could channel your inspiration into any project, what would you create?",
+        "If your inspiration had a color and texture, what would it be? Why?"
+    ],
+    "Happy": [
+        "Describe your current happiness. Where do you feel it in your body?",
+        "List 10 small things that have contributed to your happiness recently.",
+        "Write a thank-you letter to someone who has played a part in your current happy state.",
+        "How does your happiness affect the way you interact with others?",
+        "If your happiness could talk, what would it say to you?"
+    ]
+}
