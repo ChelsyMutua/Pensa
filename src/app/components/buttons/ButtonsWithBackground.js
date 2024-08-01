@@ -1,4 +1,4 @@
-// components/ButtonsWithBackground.js
+// src/app/components/buttons/ButtonsWithBackground.js
 "use client";
 import { useState } from 'react';
 import styles from './ButtonsWithBackground.module.css';
@@ -10,7 +10,7 @@ const getRandomClass = () => {
   return classes[Math.floor(Math.random() * classes.length)];
 };
 
-export default function ButtonsWithBackground() {
+export default function ButtonsWithBackground({ onDiaryClick }) {
   const [selected, setSelected] = useState(null);
   const [selectedClass, setSelectedClass] = useState(null);
   const [prompts, setPrompts] = useState([]);
@@ -70,7 +70,7 @@ export default function ButtonsWithBackground() {
           </ul>
         </div>
       )}
-      <button className={styles.diaryButton}>
+      <button className={styles.diaryButton} onClick={onDiaryClick}>
         <span className={styles.mainText}>My Diary</span>
         <span className={styles.subText}>
           <span className={styles.iconClock}>🕒</span> 5-10 minutes
