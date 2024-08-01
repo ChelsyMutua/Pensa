@@ -1,11 +1,17 @@
+// src/app/Layout.js
 "use client";
+import Sidebar from './components/Sidebar';
+import styles from './layout.module.css';
 
-import './globals.css';
-
-export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
-    );
+export default function Layout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <div className={styles.container}>
+          <Sidebar />
+          {children}
+        </div>
+      </body>
+    </html>
+  );
 }
