@@ -12,9 +12,14 @@ export default function RootLayout({ children, showSidebar }) {
       </head>
       <body>
         <div className={styles.container}>
-          {showSidebar && <Sidebar />}
-          <div className={styles.content}>
-            {children}
+          {/* <header className={styles.header}>
+            Emotion Tracker
+          </header> */}
+          <div className={styles.contentContainer}>
+            {showSidebar && <Sidebar />}
+            <div className={styles.siteLayoutContent}>
+              {children}
+            </div>
           </div>
         </div>
       </body>

@@ -151,6 +151,33 @@
     font-size: 24px;
   }
   
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/MainContent.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/* src/app/components/MainContent.module.css */
+.MainContent_mainContent__7dvG4 {
+  flex: 1 1;
+  background-image: url('/contentbg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainContent_textArea___mR_6 {
+  width: 80%;
+  height: 80vh;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -331,6 +358,12 @@ html, body, #__next {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/layout.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
 /* src/app/layout.module.css */
+.layout_container__Tovb9 {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
 .layout_header__2zrGa {
   background-color: #001529;
   color: white;
@@ -340,7 +373,22 @@ html, body, #__next {
   line-height: 64px;
 }
 
+.layout_contentContainer__6jlTQ {
+  display: flex;
+  flex: 1 1;
+}
+
+.layout_sidebar__XCoJV {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .layout_siteLayoutContent__0rFtV {
+  flex: 1 1;
   padding: 24px;
   margin: 0;
   min-height: 280px;

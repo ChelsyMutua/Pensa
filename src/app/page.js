@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import ButtonsWithBackground from './components/buttons/ButtonsWithBackground';
 import SplashScreen from './components/SplashScreen';
+import MainContent from './components/MainContent';
 import RootLayout from './layout';
 import styles from './page.module.css';
 
@@ -28,11 +29,7 @@ export default function Home() {
   if (showLayout) {
     return (
       <RootLayout showSidebar={showSidebar}>
-        <div className={styles.pageContainer}>
-          <main className={styles.mainContent}>
-            {/* Add your main content here */}
-          </main>
-        </div>
+        <MainContent />
       </RootLayout>
     );
   }

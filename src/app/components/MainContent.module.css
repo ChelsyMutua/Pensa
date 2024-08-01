@@ -1,7 +1,7 @@
 /* src/app/components/MainContent.module.css */
 .mainContent {
   flex: 1;
-  background-image: url('/splashbg.png');
+  background-image: url('/contentbg.png');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -11,7 +11,7 @@
 }
 
 .textArea {
-  width: 100%;
+  width: 80%;
   height: 80vh;
   padding: 20px;
   border: none;
