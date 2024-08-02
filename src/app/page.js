@@ -32,7 +32,7 @@ export default function Home() {
         setSelectedFeeling(feeling);
         const response = await fetch('/prompts.json');
         const data = await response.json();
-        setPrompts(data[feeling]);
+        setPrompts(data[feeling] || []);
         setShowLayout(true);
         setShowSidebar(true);
       }
@@ -40,6 +40,36 @@ export default function Home() {
 
     fetchPrompts();
   }, [searchParams]);
+
+  useEffect(() => {
+    const audio = new Audio('/pencil.mp3');
+    audio.loop = true;
+    let keyPressTimeout;
+
+    const handleKeydown = () => {
+      if (audio.paused) {
+        audio.play();
+      }
+
+      if (keyPressTimeout) {
+        clearTimeout(keyPressTimeout);
+      }
+
+      keyPressTimeout = setTimeout(() => {
+        audio.pause();
+      }, 1000);
+    };
+
+    window.addEventListener('keydown', handleKeydown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeydown);
+      if (keyPressTimeout) {
+        clearTimeout(keyPressTimeout);
+      }
+      audio.pause();
+    };
+  }, []);
 
   const handleDiaryClick = () => {
     setShowLayout(true);

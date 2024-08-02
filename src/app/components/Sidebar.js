@@ -61,12 +61,17 @@ export default function Sidebar() {
     });
   };
 
+  const handleAddButtonClick = () => {
+    router.push('/?emotion=my-diary&file=new');
+  };
+
   return (
     <div className={styles.sidebar}>
       <Button 
         shape="circle" 
         icon={<PlusOutlined />} 
         className={styles.addButton} 
+        onClick={handleAddButtonClick}
       />
       <h2>Folders</h2>
       <Menu

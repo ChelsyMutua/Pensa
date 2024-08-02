@@ -10,6 +10,7 @@ exports.id = "vendor-chunks/next";
 exports.ids = ["vendor-chunks/next"];
 exports.modules = {
 
+<<<<<<< HEAD
 /***/ "./node_modules/next/dist/build/templates/helpers.js":
 /*!***********************************************************!*\
   !*** ./node_modules/next/dist/build/templates/helpers.js ***!
@@ -421,6 +422,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 "use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\nObject.defineProperty(exports, \"getDeploymentIdQueryOrEmptyString\", ({\n    enumerable: true,\n    get: function() {\n        return getDeploymentIdQueryOrEmptyString;\n    }\n}));\nfunction getDeploymentIdQueryOrEmptyString() {\n    if (false) {}\n    return \"\";\n}\n\n//# sourceMappingURL=deployment-id.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL2RlcGxveW1lbnQtaWQuanMiLCJtYXBwaW5ncyI6IkFBQWE7QUFDYiw4Q0FBNkM7QUFDN0M7QUFDQSxDQUFDLEVBQUM7QUFDRixxRUFBb0U7QUFDcEU7QUFDQTtBQUNBO0FBQ0E7QUFDQSxDQUFDLEVBQUM7QUFDRjtBQUNBLFFBQVEsS0FBOEIsRUFBRSxFQUVuQztBQUNMO0FBQ0E7O0FBRUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wZW5zYS1hcHAvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL2RlcGxveW1lbnQtaWQuanM/OTlmMCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwge1xuICAgIHZhbHVlOiB0cnVlXG59KTtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcImdldERlcGxveW1lbnRJZFF1ZXJ5T3JFbXB0eVN0cmluZ1wiLCB7XG4gICAgZW51bWVyYWJsZTogdHJ1ZSxcbiAgICBnZXQ6IGZ1bmN0aW9uKCkge1xuICAgICAgICByZXR1cm4gZ2V0RGVwbG95bWVudElkUXVlcnlPckVtcHR5U3RyaW5nO1xuICAgIH1cbn0pO1xuZnVuY3Rpb24gZ2V0RGVwbG95bWVudElkUXVlcnlPckVtcHR5U3RyaW5nKCkge1xuICAgIGlmIChwcm9jZXNzLmVudi5ORVhUX0RFUExPWU1FTlRfSUQpIHtcbiAgICAgICAgcmV0dXJuIGA/ZHBsPSR7cHJvY2Vzcy5lbnYuTkVYVF9ERVBMT1lNRU5UX0lEfWA7XG4gICAgfVxuICAgIHJldHVybiBcIlwiO1xufVxuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1kZXBsb3ltZW50LWlkLmpzLm1hcCJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/deployment-id.js\n");
 =======
+=======
+>>>>>>> 655c1ade0e18208c166b23d6837a34346d598526
 /***/ "(ssr)/./node_modules/next/dist/api/navigation.js":
 /*!**************************************************!*\
   !*** ./node_modules/next/dist/api/navigation.js ***!
