@@ -40,15 +40,18 @@ export default function MainContent({ selectedFeeling, prompts, fileName = '' })
       });
 
       if (!response.ok) {
-        console.error(`Failed to save data: ${response.statusText}`);
+        const errorText = await response.text();
+        console.error(`Failed to save data: ${response.status} ${response.statusText}`, errorText);
+        alert(`Failed to save data: ${response.status} ${response.statusText}`);
         return;
       }
 
       const result = await response.json();
-      console.log(`Save response: ${result.message}`);
+      console.log(`Save response:`, result);
       alert('Your answers have been saved!');
     } catch (error) {
-      console.error(`Error saving data: ${error}`);
+      console.error(`Error saving data:`, error);
+      alert(`Error saving data: ${error.message}`);
     }
   };
 
