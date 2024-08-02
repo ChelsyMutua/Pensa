@@ -1,4 +1,4 @@
-/* src/app/components/sidebar.module.css */
+/* src/app/components/Sidebar.module.css */
 .sidebar {
   width: 250px;
   background-color: #333;
@@ -6,42 +6,56 @@
   padding: 20px;
   /* height: 100vh; */
   overflow-y: auto;
+  position: relative;
+}
+
+.addButton {
+  background-color: #FFDE83;
+  color: #333;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar h2 {
-  margin-top: 0;
+  margin-top: 50px; /* Adjust based on button size */
   color: white;
+  text-align: center;
 }
 
-/* Ensure the Menu is styled correctly */
-.ant-menu {
+.menu {
+  margin-top: 20px;
+}
+
+.menuItem {
+  margin: 10px 0;
+  color: black !important;
+}
+
+.menu .ant-menu-item {
   background-color: #333 !important;
-  color: white !important;
-  border-right: none !important;
+  color: black !important;
 }
 
-.ant-menu-item {
-  background-color: #333 !important;
-  color: white !important;
-  margin: 10px 0 !important;
-}
-
-.ant-menu-item:hover {
+.menu .ant-menu-item:hover {
   background-color: #444 !important;
 }
 
-.ant-menu-item-selected {
+.menu .ant-menu-item-selected {
   background-color: #555 !important;
 }
 
-.ant-menu-item a {
-  color: white !important;
+.menu .ant-menu-item a {
+  color: black !important;
 }
 
-.ant-menu-item a:hover {
+.menu .ant-menu-item a:hover {
   color: #ddd !important;
 }
 
-.ant-menu-item-icon {
-  color: white !important;
+.menu .ant-menu-item-icon {
+  color: inherit !important;
 }
