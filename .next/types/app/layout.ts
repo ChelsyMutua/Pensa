@@ -1,4 +1,4 @@
-// File: /home/tedmbg/OneDrive_tedmbg/Documents/App4035/projects/pensa/Pensa/src/app/layout.js
+// File: /Users/chelsy/Documents/pensa-app/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

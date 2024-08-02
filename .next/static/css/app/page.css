@@ -139,18 +139,24 @@
   \**************************************************************************************************************************************************************************************************************************************************************************************/
 /* src/app/components/SplashScreen.module.css */
 .SplashScreen_splashContainer__Lr5gy {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/splashbg.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 24px;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/splashbg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 24px;
+  z-index: 9999; /* Ensure it's on top of other content */
+  margin: 0;
+  padding: 0;
+}
+
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/MainContent.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
@@ -160,7 +166,8 @@
   background-image: url('/contentbg.png');
   background-size: cover;
   background-position: center;
-  padding: 20px;
+  /* padding: 20px; */
+  height: calc(100vh - 48px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +183,85 @@
   font-size: 16px;
   resize: none;
   outline: none;
+}
+
+/* .mainContent {
+  padding: 20px;
+}
+
+.textArea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+} */
+
+.MainContent_saveButton__5bwo6 {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.MainContent_saveButton__5bwo6:hover {
+  background-color: #005bb5;
+}
+
+.MainContent_mainContent__7dvG4 {
+  position: relative;
+  padding: 20px;
+}
+
+/* .textArea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+} */
+
+.MainContent_modalContent__Gmb2C, .MainContent_compactModalContent__mUKd_ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MainContent_microphoneIcon__c1T_h {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.MainContent_startButton__ZYIue, .MainContent_cancelButton__SmsHW, .MainContent_stopButton__8_x_d {
+  width: 150px;
+  margin: 10px 0;
+}
+
+.MainContent_recordingTime__yVOXN {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.MainContent_recordingIndicator__25kV0 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: MainContent_pulse__pJPWQ 1s infinite;
+}
+
+@keyframes MainContent_pulse__pJPWQ {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -299,6 +385,10 @@ body {
 }
 
 html, body, #__next {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
@@ -312,7 +402,7 @@ html, body, #__next {
   background-color: #333;
   color: white;
   padding: 20px;
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: auto;
 }
 
@@ -361,7 +451,10 @@ html, body, #__next {
 .layout_container__Tovb9 {
   display: flex;
   height: 100vh;
+  width: 100%;
   flex-direction: column;
+  margin: 0; /* Ensure no margin on the container */
+  padding: 0; /* Ensure no padding on the container */
 }
 
 .layout_header__2zrGa {
@@ -395,6 +488,16 @@ html, body, #__next {
   background: #fff;
 }
 
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/icons.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.icons_rightColumn__9QnX1 {
+    width: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+  }
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/

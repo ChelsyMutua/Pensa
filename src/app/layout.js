@@ -2,8 +2,10 @@
 import './globals.css';
 import Sidebar from './components/Sidebar';
 import styles from './layout.module.css';
+import Icons from './components/icons';
 
 export default function RootLayout({ children, showSidebar }) {
+
   return (
     <html lang="en">
       <head>
@@ -17,11 +19,13 @@ export default function RootLayout({ children, showSidebar }) {
           </header> */}
           <div className={styles.contentContainer}>
             {showSidebar && <Sidebar />}
-            <div className={styles.siteLayoutContent}>
+            <main className={styles.siteLayoutContent}>
               {children}
-            </div>
+            </main>
           </div>
+          {/* <Icons currentEntry={currentEntry} handleSave={handleSave} handleDelete={handleDelete} /> */}
         </div>
+        
       </body>
     </html>
   );

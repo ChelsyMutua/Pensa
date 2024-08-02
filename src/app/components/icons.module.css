@@ -1,0 +1,7 @@
+.rightColumn {
+    width: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+  }

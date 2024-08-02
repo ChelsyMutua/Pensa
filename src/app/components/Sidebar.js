@@ -1,6 +1,4 @@
-// src/app/components/Sidebar.js
 "use client";
-
 import { Menu } from 'antd';
 import { FolderOutlined } from '@ant-design/icons';
 import Link from 'next/link';
